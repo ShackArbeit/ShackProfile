@@ -1,18 +1,20 @@
 'use client'
 import Image from "next/image"
 import Link from "next/link"
-import taiwanImage from '../../Image/taiwan.png'
+import taiwanImage from '../../public/Image/taiwan.png'
+import NavbarImage from '../../public/Image/Nav.jpg'
 import { FiMenu } from "react-icons/fi";
 import { useState } from "react";
 import ThemeSwitch from "../Theme/ThemeSwitch";
 
 
 
+
 const Header = () => {
     const [open,setOpen]=useState(false)
   return (
-    <header className='border-b border-gray-700 py-2'>
-        <div className='flex items-center  justify-between xl:max-w-7xl max-w-full xl:mx-auto border-2 flex-wrap w-full border-red-700'>
+    <header className='border-b  border-gray-700 py-2 ' style={{backgroundImage: `url(${NavbarImage.src})`}}>
+        <div className='flex items-center  justify-between xl:max-w-7xl max-w-full xl:mx-auto flex-wrap w-full '>
             <div className=' flex justify-between items-center w-[200px]'>
             <ThemeSwitch  />
             <Image src={taiwanImage} alt='taiwan' width={120} height={15} priority={true}/> 
