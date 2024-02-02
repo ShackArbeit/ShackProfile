@@ -15,7 +15,7 @@ const Header = () => {
         <div className='flex items-center  justify-between xl:max-w-7xl max-w-full xl:mx-auto border-2 flex-wrap w-full border-red-700'>
             <div className=' flex justify-between items-center w-[200px]'>
             <ThemeSwitch  />
-            <Image src={taiwanImage} alt='taiwan' width={120} height={15}/> 
+            <Image src={taiwanImage} alt='taiwan' width={120} height={15} priority={true}/> 
             </div>
             <FiMenu className='lg:hidden block h-10 w-10  cursor-pointer'
             onClick={()=>setOpen(!open)}
