@@ -21,9 +21,9 @@ export default function ThemeSwitch(){
       title="Loading Light/Dark Toggle"
     />
   )
-  
+    
   if (resolvedTheme === 'dark') {
-    return <GoSun  onClick={() => setTheme('light')} className='text-5xl block top-5' />
+    return <GoSun  onClick={() => setTheme('light')} className='text-5xl block top-5' style={{color:'black'}} />
   }
 
   if (resolvedTheme === 'light') {

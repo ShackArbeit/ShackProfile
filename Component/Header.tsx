@@ -1,11 +1,11 @@
 'use client'
 import Image from "next/image"
 import Link from "next/link"
-import taiwanImage from '../../public/Image/taiwan.png'
-import NavbarImage from '../../public/Image/Nav.jpg'
+import taiwanImage from '../public/Image/taiwan.png'
+import NavbarImage from '../public/Image/Nav.jpg'
 import { FiMenu } from "react-icons/fi";
 import { useState } from "react";
-import ThemeSwitch from "../Theme/ThemeSwitch";
+import ThemeSwitch from "./Theme/ThemeSwitch";
 
 
 
@@ -25,19 +25,19 @@ const Header = () => {
             <nav className={`lg:flex ${open ? "block" : "hidden"} w-full lg:items-center lg:w-auto`}>
                 <ul className='text-base text-gray-700  dark:text-white lg:flex lg:justify-between'>
                     <li>
-                        <Link href='/' className='lg:px-5 py-2 block text-center text-2xl  hover:text-blue-600 font-semibold'>Home </Link>
+                        <Link href='/' className='lg:px-5 py-2 block text-center text-2xl dark:text-black hover:text-blue-600 font-semibold'>Home </Link>
                     </li>
                     <li>
-                        <Link href='/' className='lg:px-5 py-2 block text-center text-2xl hover:text-blue-600 font-semibold'>About Me </Link>
+                        <Link href='/' className='lg:px-5 py-2 block text-center text-2xl  dark:text-black hover:text-blue-600 font-semibold'>About Me </Link>
                     </li>
                     <li>
-                        <Link href='/' className='lg:px-5 py-2 block text-center text-2xl  hover:text-blue-600 font-semibold'>Work </Link>
+                        <Link href='/' className='lg:px-5 py-2 block text-center text-2xl  dark:text-black  hover:text-blue-600 font-semibold'>Work </Link>
                     </li>
                     <li>
-                        <Link href='/' className='lg:px-5 py-2 block text-center  text-2xl hover:text-blue-600 font-semibold'>Projects </Link>
+                        <Link href='/' className='lg:px-5 py-2 block text-center  text-2xl  dark:text-black hover:text-blue-600 font-semibold'>Projects </Link>
                     </li>
                     <li>
-                        <Link href='/' className='lg:px-6 py-2 block text-center text-2xl bg-blue-600 text-white rounded-xl font-semibold'>Contact </Link>
+                        <Link href='/' className='lg:px-6 py-2 block text-center text-2xl   bg-blue-600 text-white rounded-xl font-semibold'>Contact </Link>
                     </li>
                 </ul>
             </nav>
