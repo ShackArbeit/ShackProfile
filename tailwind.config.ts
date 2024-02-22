@@ -8,8 +8,8 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-       
+      colors: {
+        githubColor: '#001c55', 
       },
     },
   },
