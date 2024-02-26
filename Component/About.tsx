@@ -4,12 +4,21 @@ import Image from "next/image"
 const About = () => {
   return (
     <div className='  items-center justify-center 
-               border-red-950 py-20 px-6  border-2 max-w-full box-border
+               py-20 px-6  border-2 max-w-full box-border
                container mx-auto grid lg:grid-cols-12 grid-cols-2 '>
+         <div 
+        className='
+         box-border col-span-4 
+        lg:order-2  lg:mb-0  mb-9 lg:p-3 relative lg:left-20
+        w-[280px] h-[280px] 
+        '>
+           <div className='  h-full w-full 
+        bg-profile bg-center bg-cover rounded-lg '></div>
+        </div>
         <div 
-        className='border-green-950 border-2 flex flex-col box-border 
-        mb-5 col-span-8
-                  
+        className=' flex flex-col box-border 
+        mb-5 col-span-8 lg:order-1
+           
         '>
            <h1 className='text-5xl mb-9 tracking-widest  text-purple-800 font-sans font-bold dark:text-white' >
             Hi, I am Shack Lin
@@ -58,11 +67,6 @@ const About = () => {
             rounded-md py-2.5 px-1.5 w-[200px] cursor-pointer
             '
             >⭐ Star Me On Github</div>
-        </div>
-        <div 
-        className=
-        'border-red-900 border-2 box-border col-span-4 '>
-            <h1>About Right </h1>
         </div>
 
     </div>

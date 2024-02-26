@@ -11,6 +11,9 @@ const config: Config = {
       colors: {
         githubColor: '#001c55', 
       },
+      backgroundImage: {
+          'profile': "url('../public/Image/profile.jpg')",
+      }
     },
   },
   plugins: [],
