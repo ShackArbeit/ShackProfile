@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         githubColor: '#001c55', 
+        workColor:'#edf2f8'
       },
       backgroundImage: {
           'profile': "url('../public/Image/profile.jpg')",

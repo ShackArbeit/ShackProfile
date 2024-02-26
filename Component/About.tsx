@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const About = () => {
   return (
-    <div className='  items-center justify-center 
+    <section className='  items-center justify-center 
                py-20 px-6  border-2 max-w-full box-border
                container mx-auto grid lg:grid-cols-12 grid-cols-2 '>
          <div 
@@ -17,7 +17,7 @@ const About = () => {
         </div>
         <div 
         className=' flex flex-col box-border 
-        mb-5 col-span-8 lg:order-1
+        mb-5 col-span-8 lg:order-1 pl-[100px]
            
         '>
            <h1 className='text-5xl mb-9 tracking-widest  text-purple-800 font-sans font-bold dark:text-white' >
@@ -68,8 +68,7 @@ const About = () => {
             '
             >⭐ Star Me On Github</div>
         </div>
-
-    </div>
+    </section>
   )
 }
 
