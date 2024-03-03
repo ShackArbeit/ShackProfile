@@ -2,6 +2,7 @@ import Image from "next/image"
 
 
 const About = () => {
+  console.log('Hi I am Shack')
   return (
     <section className='  items-center justify-center 
                py-20 px-6   max-w-full box-border
