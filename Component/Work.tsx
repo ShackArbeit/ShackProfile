@@ -27,7 +27,8 @@ const Work = () => {
         <h1 className="mb-[20px] text-4xl text-center font-bold">
           Work Experience{" "}
         </h1>
-        <div className="max-w-[500px] border-l-2 border-black m-auto pl-[32px] dark:border-l-2 dark:border-white ">
+        <div className="max-w-[500px] border-l-2 border-black m-auto pl-[32px] 
+        dark:border-l-2 dark:border-white ">
           {datas.map((data: profileData) => (
             <div className="job">
               <h1 className="text-xl">{data.name}</h1>
