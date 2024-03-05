@@ -14,7 +14,7 @@ const config: Config = {
       },
       backgroundImage: {
           'profile': "url('../public/Image/profile.jpg')",
-      }
+      },
     },
   },
   plugins: [],
