@@ -30,13 +30,14 @@ const Work = () => {
         <div className="max-w-[500px] border-l-2 border-black m-auto pl-[32px] 
         dark:border-l-2 dark:border-white ">
           {datas.map((data: profileData) => (
-            <div className="job">
-              <h1 className="text-xl">{data.name}</h1>
-              <h3 className="text-base text-[#9c27b0] font-bold my-4">
+            <div className="job" key={data.Date}>
+              <h1 className="text-xl" key={data.name}>{data.name}</h1>
+              <h3 className="text-base text-[#9c27b0] font-bold my-4" >
                 {data.title}
               </h3>
-              <h3 className="text-base text-black ">{data.period}</h3>
+              <h3 className="text-base text-black " >{data.period}</h3>
               <Image
+                
                 src={data.url}
                 alt="trend_go"
                 width={70}
