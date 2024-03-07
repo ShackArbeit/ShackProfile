@@ -15,7 +15,6 @@ const Work = () => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch("/api/work");
-      console.log(response);
       const Data = await response.json();
       setDatas(Data);
     };
@@ -37,7 +36,6 @@ const Work = () => {
               </h3>
               <h3 className="text-base text-black " >{data.period}</h3>
               <Image
-                
                 src={data.url}
                 alt="trend_go"
                 width={70}
