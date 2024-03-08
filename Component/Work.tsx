@@ -37,7 +37,7 @@ const Work = () => {
               <h3 className="text-base text-black " >{data.period}</h3>
               <Image
                 src={data.url}
-                alt="trend_go"
+                alt={data.name}
                 width={70}
                 height={70}
                 className="absolute top-[60px] right-[10px] object-contain "

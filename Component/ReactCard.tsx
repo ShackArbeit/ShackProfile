@@ -37,17 +37,14 @@ const ReactCard = () => {
     };
     fetchSpanData();
   }, []);
-
-  console.log(spans);
-
   return (
     <section className='flex flex-row border-2 border-red justify-center items-center flex-wrap gap-y-8 gap-x-5'>
     {datas.map((data: ReactContent) => (
-      <div className='p-4 border-1 border-[#6b7688] text-center bg-[#e0e0e0] w-[280px] rounded-xl hover:shadow-[0_5px_50px_-20px_#0eb9f5]' key={data.title}>
+      <div className='p-4 border-1 border-[#6b7688] text-center bg-[#e0e0e0] w-[280px] rounded-xl hover:shadow-[0_5px_50px_-20px_#0eb9f5]' key={data.id}>
         <>
           <Image width={250} height={0} alt='' src={data.imgurl} />
           <p className='mt-5 mb-2.5 text-2xl font-semibold'>{data.title}</p>
-          <div className='mb-4 box-border text-center w-full border-2 border-red-900 '>
+          <div className='mb-4 box-border text-center '>
             {/* 在這裡遍歷 spans，找到相應的 spans */}
             {spans.find((Span: SpanContent) => Span.id === data.id)?.content.map((span) => (
               <span className='p-1 font-semibold text-[12px] border-2 border-[#9c27b0] rounded-md inline-flex text-[#9c27b0] mx-1 my-1' key={span}>{span}</span>
