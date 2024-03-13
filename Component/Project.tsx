@@ -1,6 +1,7 @@
 'use client'
 import {useState} from 'react'
 import ReactCard from './ReactCard'
+import NextCard from './NextCard'
 
 const Project = () => {
    const[checkClick,setCheckClick]=useState<string|null>(null)
@@ -25,6 +26,7 @@ const Project = () => {
       {/* 介紹卡片的部分 */}
       <div>
         <ReactCard/>
+        <NextCard />
       </div>
   </section>
   )
